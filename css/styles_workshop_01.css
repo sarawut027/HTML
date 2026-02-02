@@ -23,13 +23,13 @@ html {
 header {
   text-align: center;
   padding: 10px 20px;
-  background-color: #8D8E88;
+  background-color: #8d8e88;
 
   display: block;
   /* margin: 5px auto; */
   width: fit-content;
 
-  border: 2px dashed #31323B;
+  border: 2px dashed #31323b;
   border-radius: 15px;
   position: fixed;
   transform: translateX(-50%);
@@ -42,7 +42,7 @@ h1 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
-  color: #EFF1EC;
+  color: #eff1ec;
 }
 .list-menu {
   list-style: none;
@@ -54,7 +54,7 @@ h1 {
   justify-content: center;
 }
 .list-menu li {
-  background: linear-gradient( 135deg,#8F534D ,#942c22);
+  background: linear-gradient(135deg, #8f534d, #942c22);
 
   display: flex;
   justify-content: center;
@@ -74,74 +74,73 @@ h1 {
   font-weight: bold;
 }
 .list-menu a:hover {
-  color: #464E54;
+  color: #464e54;
 }
 /* Body */
 .container {
   max-width: 1000px;
   margin: 100px auto 40px;
-  
-  
 }
 /* Myinfo */
 .card-myinfo {
-  background-color: #31323B;
+  background-color: #31323b;
   padding: 20px 30px;
   margin: 20px 0;
   border-radius: 15px;
-  border-top: 4px solid #797B8B;
+  border-top: 4px solid #797b8b;
   color: white;
 
   display: grid;
-  grid-template-columns: repeat(3 ,1fr) ;
+  grid-template-columns: repeat(3, 1fr);
 }
 .img-me {
-    width: 150px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border: #464e54 dashed 2px;
+  width: 150px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: #464e54 dashed 2px;
 }
 .lit-info {
-    text-align: start;
-    padding-top: 20px;
+  text-align: start;
+  padding-top: 20px;
 }
 .contact {
-    text-align: start;
-    padding-top: 20px;
+  text-align: start;
+  padding-top: 20px;
 }
 .facebook {
-    width: 20px;
-    height: auto;
-    border-radius: 2px;
+  width: 20px;
+  height: auto;
+  border-radius: 2px;
 }
 /* Card 1 */
 h2 {
   color: white;
   font-size: 20px;
   font-weight: 400;
-  background: linear-gradient(100deg,#31323B,#797B8B);
+  background: linear-gradient(100deg, #31323b, #797b8b);
   max-width: fit-content;
   padding: 3px 6px;
   margin-bottom: 4px;
   border-radius: 5px;
-  box-shadow: #31323B 2px,4px;
+  box-shadow:
+    #31323b 2px,
+    4px;
 }
 .card {
-  background: linear-gradient(135deg,#4A4A4A,#8D726D) ;
+  background: linear-gradient(135deg, #4a4a4a, #8d726d);
   border-radius: 15px;
   gap: 5px;
   display: grid;
-  grid-template-columns: repeat(4,8fr);
-  
+  grid-template-columns: repeat(4, 8fr);
+
   align-items: start;
   justify-content: start;
   padding: 5px 10px;
 
   box-shadow: 2px 1px rgba(245, 245, 245, 0.562);
-  
 }
 .grade {
   white-space: nowrap;
@@ -157,7 +156,7 @@ code {
 }
 .course {
   display: grid;
-  grid-template-columns: repeat(1,8fr);
+  grid-template-columns: repeat(1, 8fr);
   padding: 5px;
 }
 .sumgrade {
@@ -169,14 +168,14 @@ code {
   margin-left: 20px;
   margin-bottom: 10px;
   border-left: #464e54 solid 2px;
-  color: #F7F7F9;
+  color: #f7f7f9;
 }
 .note {
   margin-left: 2px;
 }
 .h-grade {
   text-align: center;
-  background-color: #8F534D;
+  background-color: #8f534d;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -199,9 +198,9 @@ code {
 footer {
   text-align: center;
   color: white;
-  background: linear-gradient(100deg ,#8F534D,#9B7863);
+  background: linear-gradient(100deg, #8f534d, #9b7863);
   display: block;
-  width: fit-content; 
+  width: fit-content;
   justify-content: center;
   margin: auto;
   padding: 2px 4px;
@@ -209,14 +208,14 @@ footer {
 }
 /* เพิ่มเติม */
 .card.module-1 {
-border-left: 5px solid#f7f7f98e ;
+  border-left: 5px solid#f7f7f98e;
 }
 .card.module-2 {
-border-left: 5px solid#9A9499 ;
+  border-left: 5px solid#9A9499;
 }
 .card.module-3 {
-border-left: 5px solid#BDADA7 ;
+  border-left: 5px solid#BDADA7;
 }
 .card.module-4 {
-border-left: 5px solid#7D8485 ;
+  border-left: 5px solid#7D8485;
 }
