@@ -282,8 +282,10 @@
 
                 <!-- <input type="submit" value="ส่งข้อความ" onclick="alert('ส่งข้อความสำเร็จ!')"> -->
                 <div class="btn-group">
-                  <button type="submit" onclick="alert('ส่งข้อความสำเร็จ!')" class="form-button submit-btn">📨 ส่งข้อความ</button>
-                  <button type="reset" onclick="alert('ล้างข้อมูลสำเร็จ!')" class="form-button reset-btn">🗑️ ล้างข้อมูล</button>
+                  <button type="submit" onclick="alert('ส่งข้อความสำเร็จ!')" class="form-button submit-btn">📨
+                    ส่งข้อความ</button>
+                  <button type="reset" onclick="alert('ล้างข้อมูลสำเร็จ!')" class="form-button reset-btn">🗑️
+                    ล้างข้อมูล</button>
                 </div>
 
               </form>
@@ -294,47 +296,190 @@
         <aside>
           <!-- Widget 01 -->
           <div class="widget">
-            สวัสดีครับ ยินดีต้อนรับ
-            ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ Startup
-            รูปผู้เขียน
-            กดติดตามใน Facebook
+            <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
+            <p class="post-description">
+              ผมชื่อ Sarawut เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ Startup
+            </p>
+            <div class="auther-photo">รูปผู้เขียน</div>
+            <a href="" class="btn-facebook">กดติดตามใน Facebook</a>
+
           </div>
 
           <!-- Widget 02 -->
           <div class="widget">
-            📧 รับข่าวสารใหม่
-            ชื่อของคุณ อีเมล สนใจเนื้อหาด้านไหน 🚀 สมัครเลย!
+            <div class="widget-02">
+              <h3 style="text-align: center; color: #fff; margin-bottom: 8px;">📧 รับข่าวสารใหม่</h3>
+              <div class="widget-input">
+                <label for="name">ชื่อของคุณ</label>
+                <input class="widget-input" type="text" id="name" name="name" placeholder="ใส่ชื่อของคุณ">
+              </div>
+              <div class="widget-input">
+                <label for="email">อีเมล</label>
+                <input class="widget-input" type="text" id="email" name="email" placeholder="ใส่อีเมลของคุณ">
+              </div>
+              <div class="widget-input">
+                <label for="topic">สนใจเนื้อหาด้านไหน </label>
+                <select name="topic" id="topic" class="form-select">
+                  <option value="Web development">Web development</option>
+                  <option value="Moblie development">Moblie development</option>
+                  <option value="UX/UI design">UX/UI design</option>
+                  <option value="AI">AI</option>
+                </select>
+              </div>
+              <button class="widget-button" onclick="alert('สมัครสำเร็จ!')">🚀 สมัครเลย!</button>
+            </div>
           </div>
 
           <!-- Widget 03 -->
           <div class="widget">
-            💬 ติดต่อด่วน
-            ชื่อ เรื่องที่ต้องการติดต่อ ข้อความสั้นๆ 📤 ส่งเลย
+            <div class="widget-03">
+              <h3 style="text-align: center; color: #fff; margin-bottom: 8px;">💬 ติดต่อด่วน</h3>
+              <div class="widget-input">
+                <label for="name">ชื่อ</label>
+                <input class="widget-input" type="text" id="name" name="name" placeholder="ใส่ชื่อของคุณ">
+              </div>
+              <div class="widget-input">
+                <label for="topic">เรื่องที่ต้องการติดต่อ</label>
+                <select name="topic" id="topic" class="form-select">
+                  <option value="ความร่วมมือ">ความร่วมมือ</option>
+                  <option value="ปรึกษา">ปรึกษา</option>
+                  <option value="ปรึกษาโปรเจ็กต์">ปรึกษาโปรเจ็กต์</option>
+                  <option value="ให้ความคิดเห็น">ให้ความคิดเห็น</option>
+                  <option value="อื่นๆ">อื่นๆ</option>
+                </select>
+              </div>
+              <div class="widget-input">
+                <label for="message">ข้อความสั้นๆ</label>
+                <textarea name="message" id="message" placeholder="ใส่ข้อความสั้นๆ" class="form-text-area"></textarea>
+              </div>
+              <button class="widget-button" onclick="alert('ส่งข้อความสำเร็จ!')">📤 ส่งเลย</button>
+            </div>
           </div>
 
           <!-- Widget 04 -->
           <div class="widget">
-            กล่อง Facebook Like (ตัวอย่าง)
-            203,779 คนถูกใจ
+            <div class="widget-title">
+              Facebook Like
+            </div>
+            <div class="auther-photo">
+              กล่อง Facebook Like (ตัวอย่าง)
+              203,779 คนถูกใจ
+            </div>
           </div>
+
 
           <!-- Widget 05 -->
           <div class="widget">
-            Sponsor
-            พื้นที่โฆษณา / วิดีโอ
+            <div class="widget-title">Sponsor</div>
+            <div class="auther-photo">พื้นที่โฆษณา / วิดีโอ</div>
           </div>
         </aside>
 
       </div>
+      <!-- ------------------------------------------------------------------------------- -->
+      <!-- table ราคาทอง -->
+      <div class="card" style="margin-top: 30px;">
+        <p class="post-headline">
+          CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
+        </p>
 
+        <div class="post-header">
+          <h3>ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2568-2569</h3>
+          <div class="date-circle">
+            <span class="day">2</span>
+            <span>MAR</span>
+          </div>
+        </div>
+        <p class="post-description">
+          สรุปข้อมูลราคาทองคําแท่งในประเทศชนิด 96.5% เริ่มตั้งแต่ปี 2549 ถึงปีปัจจุบัน 2568 โดยเป็นการแสดงราคาต่ำสุด
+          ราคาสูงสุดของทุกๆ เดือน รวมถึง ราคารวมที่ปรับเพิ่มขึ้นหรือลดลงในแต่ละเดือน และสรุปราคารวม สูงสุด ต่ำสุด
+          ประจำปี
+        </p>
+        <!-- เริ่มสร้างตาราง ราคาทอง -->
+        <div class="wrap-gold-table">
+          <table class="gold-table">
+            <thead>
+              <tr>
+                <th rowspan="2">เดือน ปี</th>
+                <th colspan="3">2569</th>
+                <th colspan="3">2568</th>
+              </tr>
+              <tr>
+                <th class="num-center">ขึ้น/ลง</th>
+                <th class="num-center">ต่ำสุด</th>
+                <th class="num-center">สูงสุด</th>
+                <th class="num-center">ขึ้น/ลง</th>
+                <th class="num-center">ต่ำสุด</th>
+                <th class="num-center">สูงสุด</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="num-center">เม.ย.</th>
+                <td class="num-right">-</td>
+                <td class="num-right">-</td>
+                <td class="num-right">-</td>
+                <td class="red-text"> <span class="icon down"></span>-1,950</td>
+                <td class="num-right">49,100</td>
+                <td class="num-right">54,800</td>
+              </tr>
+              <tr>
+                <th class="num-center">มี.ค.</th>
+                <td class="red-text"> <span class="icon down"></span>-1,700</td>
+                <td class="num-right">78,750</td>
+                <td class="num-right">79,050</td>
+                <td class="green-text"> <span class="icon up"></span>+3,750</td>
+                <td class="num-right">46,350</td>
+                <td class="num-right">50,100</td>
+              </tr>
+              <tr>
+                <th class="num-center">ก.พ.</th>
+                <td class="green-text"> <span class="icon up"></span>+3,400</td>
+                <td class="num-right">68,200</td>
+                <td class="num-right">77,600</td>
+                <td class="red-text"> <span class="icon down"></span>-1,850</td>
+                <td class="num-right">44,600</td>
+                <td class="num-right">47,450</td>
+              </tr>
+              <tr>
+                <th class="num-center">ม.ค.</th>
+                <td class="green-text"> <span class="icon up"></span>+9,250</td>
+                <td class="num-right">64,550</td>
+                <td class="num-right">81,950</td>
+                <td class="green-text"> <span class="icon up"></span>+2,050</td>
+                <td class="num-right">42,550</td>
+                <td class="num-right">44,850</td>
+              </tr>
+              <tr class="gold-table-footer">
+                <th style="background-color: rgb(129, 201, 129, 0.299);">ทั้งปี</th>
+                <td class="green-text"> <span class="icon up"></span>+14,350</td>
+                <td class="num-right">64,550</td>
+                <td class="num-right">81,950</td>
+                <td class="green-text"> <span class="icon up"></span>+22,550</td>
+                <td class="num-right">42,550</td>
+                <td class="num-right">67,400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="post-footer">
+          <span>Tags:</span>
+          <a href="">responsive design </a><span>•</span>
+          <a href="">media queries </a><span>•</span>
+          <a href="">flexbox </a><span>•</span>
+          <a href="">CSS grid</a>
+
+        </div>
+      </div>
     </div>
 
   </div>
 
   <!-- Footer -->
   <footer>
-    © 2025 Sarawut — All rights reserved.
-    Designed for educational/demo purposes • Contact
+    <p>© 2025 Sarawut — All rights reserved.</p>
+
+    <p>Designed for educational/demo purposes • <a href="">Contact</a></p>
   </footer>
 </body>
 
