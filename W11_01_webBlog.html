@@ -39,14 +39,19 @@
   <!-- Navbar -->
   <nav class="main-nav">
     <div class="wrapper">
-      <ul class="nav-menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#" class="active">AI Technology</a></li>
-        <li><a href="#" class="active">Machine Learning</a></li>
-        <li><a href="#" class="active">Deep Learning</a></li>
-        <li><a href="#" class="active">AI Tools</a></li>
-        <li><a href="#" class="active">AI News</a></li>
-      </ul>
+      <div id="hamburger-menu">
+        <span></span>
+      </div>
+      <div id="menu">
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" class="active">AI Technology</a></li>
+          <li><a href="#" class="active">Machine Learning</a></li>
+          <li><a href="#" class="active">Deep Learning</a></li>
+          <li><a href="#" class="active">AI Tools</a></li>
+          <li><a href="#contact" class="active">AI News</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -108,7 +113,7 @@
         <!-- Left Side -->
         <main class="post-list">
           <!-- Card 1 = Image -->
-          <div class="card">
+          <div class="card order-box-image">
             <p class="post-headline">
               CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
             </p>
@@ -141,7 +146,7 @@
           </div>
 
           <!-- Card 2 = Table -->
-          <div class="card">
+          <div class="card order-box-table">
             <p class="post-headline">
               CATEGORY ARCHIVES: <b>CSS DISPLAY PROPERTY</b>
             </p>
@@ -217,7 +222,7 @@
           </div>
 
           <!-- Card 3 = Form -->
-          <div class="card">
+          <div class="card order-box-form" id="contact">
             <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
             <!-- Form -->
             <div class="contact-form-main-card">
@@ -293,9 +298,9 @@
           </div>
         </main>
         <!-- Right Side -->
-        <aside>
+        <aside class="sidebar">
           <!-- Widget 01 -->
-          <div class="widget">
+          <div class="widget order-w-intro">
             <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
             <p class="post-description">
               ผมชื่อ Sarawut เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ Startup
@@ -306,7 +311,7 @@
           </div>
 
           <!-- Widget 02 -->
-          <div class="widget">
+          <div class="widget order-w-form-green">
             <div class="widget-02">
               <h3 style="text-align: center; color: #fff; margin-bottom: 8px;">📧 รับข่าวสารใหม่</h3>
               <div class="widget-input">
@@ -331,7 +336,7 @@
           </div>
 
           <!-- Widget 03 -->
-          <div class="widget">
+          <div class="widget order-w-form-purple">
             <div class="widget-03">
               <h3 style="text-align: center; color: #fff; margin-bottom: 8px;">💬 ติดต่อด่วน</h3>
               <div class="widget-input">
@@ -357,7 +362,7 @@
           </div>
 
           <!-- Widget 04 -->
-          <div class="widget">
+          <div class="widget order-w-facebook">
             <div class="widget-title">
               Facebook Like
             </div>
@@ -369,7 +374,7 @@
 
 
           <!-- Widget 05 -->
-          <div class="widget">
+          <div class="widget order-w-suport">
             <div class="widget-title">Sponsor</div>
             <div class="auther-photo">พื้นที่โฆษณา / วิดีโอ</div>
           </div>
@@ -378,7 +383,7 @@
       </div>
       <!-- ------------------------------------------------------------------------------- -->
       <!-- table ราคาทอง -->
-      <div class="card" style="margin-top: 30px;">
+      <div class="card card-margin">
         <p class="post-headline">
           CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
         </p>
@@ -481,6 +486,28 @@
 
     <p>Designed for educational/demo purposes • <a href="">Contact</a></p>
   </footer>
+   <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
+<!-- Good Luck!! -->
