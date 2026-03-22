@@ -277,9 +277,15 @@ section {
     border-radius: 16px;
     box-shadow: 0 4px 14px #6c6b6b;
 }
+.form-row2 {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+}
 
-
-
+.form-group {
+    margin-bottom: 16px;
+}
 .form-group.full-width {
     width: 100%;
 }
@@ -414,6 +420,9 @@ footer {
     .discover-content {
     grid-template-columns: repeat(2,1fr);
     }
+    .checkbox-group {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px) {
@@ -438,6 +447,9 @@ footer {
         padding: 10px 15px;
         border-bottom: 1px solid var(--secondary-color);
     }
+    .radio-group {
+        flex-wrap: wrap;
+    }
     #burger-menu {
         display: block;
     }
@@ -455,8 +467,16 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
    /* ปุ่ม withd 100% */
+   .form-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
    /* footer flex colum */
-    
+    .footer-container {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
