@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonball-2</title>
+    <link rel="stylesheet" href="css/infogame.css">
+    <link rel="icon" type="image/png" href="image/LOGO-removebg-preview.png">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+    </style>
+    <!-- -------------------------------------------------------------------------------- -->
+    <header>
+        <a href="homepage.html"><img class="logo" src="image/LOGO-removebg-preview.png" alt="logo" width="100px"
+                height="100px"></a>
+        <div class="nav-menu">
+            <h2><a href="Pc.html">PC</a></h2>
+            <h2><a href="Playstation.html">Play Station</a></h2>
+            <h2><a href="xbox.html">Xbox</a></h2>
+        </div>
+
+        <div class="icon">
+            <form class="search-form" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search games..." required>
+                <button type="submit">
+                    <span class="search-icon">🔍</span>
+                </button>
+            </form>
+            <a href="indexlogin.html" class="profile-icon">👤</a>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- Baner -->
+    <div class="hero-baner">
+        <img src="https://cdn11.bigcommerce.com/s-k0hjo2yyrq/images/stencil/1280x1280/products/1036/516/Dragon_Ball_Xenoverse_2_Hero_of_Justice_Pack_Set_Product_Banner__88555.1726747443.jpg?c=1"
+            alt="Hero-baner" height="400px" width="100%">
+    </div>
+    <!-- Main -->
+    <main>
+        <h2>Dragonball 2</h2>
+        <div class="description-box">
+            <h4>Dragon Ball Xenoverse 2</h4>
+            <div class="description">
+                <div class="description-info">
+                    <p>An action-packed RPG where players create their own custom avatar to protect the Dragon Ball timeline. You can explore a massive hub world, train under iconic mentors, and participate in epic 3D battles to correct distortions in history.</p>
+                </div>
+                <!-- รูปภาพทำสไลด์Java -->
+                <div class="potoleft">
+
+                    <div class="slider-container">
+                        <div class="slides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454650/ss_d38e04f3f4278fb2bf0dd5be4587d1577f8e53a0.1920x1080.jpg?t=1770607649"
+                                alt="Image 1">
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454650/ss_412fe476f8d59c6d6c6b2b8da97f2ea4fd4b5356.1920x1080.jpg?t=1770607649"
+                                alt="Image 2">
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454650/ss_1bc6848427f580686e56fc659c937ea108beef51.1920x1080.jpg?t=1770607649"
+                                alt="Image 3">
+                        </div>
+                        <div class="slides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454650/ss_e1cf234b04a51d0ce3167042393a8c31d39925bb.1920x1080.jpg?t=1770607649"
+                                alt="Image 4">
+                        </div>
+                        <div class="slides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454650/ss_3c46d9e3c3c853a2543c0fb54ba06bc3c6a9750d.1920x1080.jpg?t=1770607649"
+                                alt="Image 5">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------- -->
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="button-group">
+            <div class="btn">
+                <img src="image/steam-bt.png" alt="steam">
+                <a href="https://store.steampowered.com/app/454650/DRAGON_BALL_XENOVERSE_2/?l=thai&curator_clanid=26328680">STEAM</a>
+            </div>
+            <div class="btn">
+                <img src="image/play-bt.png" alt="play-station">
+                <a href="https://www.playstation.com/en-th/games/dragon-ball-xenoverse-2/">PLAY-STATION</a>
+            </div>
+            <div class="btn">
+                <img src="image/xbox-bt.png" alt="xbox">
+                <a href="https://www.xbox.com/th-th/games/store/dragon-ball-xenoverse-2/bx03760d0qgn">Xbox</a>
+            </div>
+            <div class="btn-trailer">
+                <img src="image/youtube-bt.png" alt="Trailer">
+                <a href="https://www.youtube.com/watch?v=R7B7ZvcrOXQ">Trailer!</a>
+            </div>
+
+        </div>
+        <!-- สเปค -->
+        <section class="system-req">
+
+            <h2 class="req-title">System Requirements</h2>
+            <div class="req-grid">
+                <div class="req-box">
+                    <h3>MINIMUM:</h3>
+                    <p><strong>OS:</strong> Windows 10</p>
+                    <p><strong>PROCESSOR:</strong> Intel Core i5-3570 / AMD Ryzen 5 1600</p>
+                    <p><strong>MEMORY:</strong> แรม 4 GB</p>
+                    <p><strong>GRAPHICS:</strong> Nvidia GeForce GTX 1030 / AMD Radeon HD 7770</p>
+                    <p><strong>DIRECTX:</strong> เวอร์ชัน 11</p>
+                    <p><strong>STORAGE:</strong> -</p>
+                </div>
+
+                <div class="req-box">
+                    <h3>RECOMMENDED:</h3>
+                    <p><strong>OS:</strong> Windows 10 / Windows 11</p>
+                    <p><strong>PROCESSOR:</strong> AMD Ryzen 3 3100 / Intel Core i5-6400</p>
+                    <p><strong>MEMORY:</strong> แรม 4 GB</p>
+                    <p><strong>GRAPHICS:</strong> Nvidia GeForce 750 Ti / AMD Radeon HD 7850 / Intel Arc A380</p>
+                    <p><strong>DIRECTX:</strong> เวอร์ชัน 11</p>
+                    <p><strong>STORAGE:</strong> -</p>
+                </div>
+
+            </div>
+            <!-- ------------------------------------------ -->
+        </section>
+
+    </main>
+    <script src="js/pic.js"></script>
+</body>
+
+</html>
